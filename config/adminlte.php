@@ -258,7 +258,7 @@ return [
             'icon'        => 'far fa-fw fa-file',
         ],
         [
-            'text'        => 'Instructores',
+            'text'        => 'Instructor',
             'url'         => 'instructor',
             'icon'        => 'far fa-fw fa-file',
         ],

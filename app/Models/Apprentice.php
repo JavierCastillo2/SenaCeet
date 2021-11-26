@@ -18,4 +18,7 @@ class Apprentice extends Model
         'genero',
         'ficha_id',
     ];
+    public function ficha(){
+        return $this->belongsTo('App\Models\Ficha', 'ficha_id');
+    }
 }

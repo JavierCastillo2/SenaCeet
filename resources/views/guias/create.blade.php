@@ -7,6 +7,7 @@
 @stop
 
 @section('content')
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
     <div class="col-md-3">
         <form action="{{route('guias.store')}}" method="POST" enctype="multipart/form-data">

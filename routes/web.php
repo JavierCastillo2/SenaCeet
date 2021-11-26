@@ -5,7 +5,7 @@ use App\Http\Controllers\FichaController;
 use App\Http\Controllers\GuideController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InstructorController;
-
+use App\Models\GuideAprendices;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,6 +36,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     Route::resource('guias', GuideController::class);
     Route::resource('fichas', FichaController::class);
     Route::resource('apprentices', ApprenticeController::class);
+    Route::resource('GuiasAprendices', GuideAprendices::class);
 });
 });
 

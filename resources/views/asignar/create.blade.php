@@ -20,15 +20,32 @@
 
                 <option value="{{$apprentice->ficha->id}}">{{$apprentice->ficha->name}}</option>
 
+                @endforeach
             </select>
             </br>
-            <select class="form-select" name="ficha_id" aria-label=".form-select-lg example">
-                <option disabled selected>Seleccione la ficha</option>
-
-            <option value="{{$apprentice->ficha->id}}">{{$apprentice->ficha->name}}</option>
-
-            @endforeach
-
+            </div>
+            <div class="form-group">
+                <label for="">Nombre</label>
+                <input type="text" class="form-control" name="nombre">
+            </div>
+            <div class="form-group">
+                <label for="">Apellido</label>
+                <input type="text" class="form-control" name="apellido">
+            </div>
+            <div class="form-group">
+                <label for="">Correo</label>
+                <input type="text" class="form-control" name="correo">
+            </div>
+            <div class="form-group">
+                <label for="">Genero</label>
+            </br>
+            <select class="form-select " name="genero" aria-label=".form-select-lg example">
+                <option disabled selected>Selecciones el Genero</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+              </select>
+            </div>
+            <br>
             <div class="form-group, p-2">
                 <button class="btn btn-primary" type="submit">Crear</button>
                 <a href="{{route('apprentices.index')}}" class="btn btn-danger" >Cancelar</a>
