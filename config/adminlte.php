@@ -243,7 +243,7 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-            'text'        => 'Ficha',
+            'text'        => 'Fichas',
             'url'         => 'fichas',
             'icon'        => 'far fa-fw fa-file',
         ],
@@ -260,6 +260,11 @@ return [
         [
             'text'        => 'Instructor',
             'url'         => 'instructor',
+            'icon'        => 'far fa-fw fa-file',
+        ],
+        [
+            'text'        => 'Asiganar Guias',
+            'url'         => 'GuiasAprendices',
             'icon'        => 'far fa-fw fa-file',
         ],
     ],
